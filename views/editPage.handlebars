@@ -1,0 +1,100 @@
+<div id="formContainerDiv" class="row">
+    <form id="requestForm" class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="destination_name" type="text" required value="{{this.destination}}">
+                <label for="destination_name">Destination Name (Required)</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="destination_address" type="text" required value="{{this.address}}">
+                <label for="destination_address">Destination Address (Required)</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="destination_phoneNumber" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Phone Number Format: 123-456-7899" class="validate" value="{{this.phoneNumber}}">
+                <label for="destination_phoneNumber" data-error="Please enter a valid phone number Format: 123-456-7899" data-success="Valid">Phone Number &nbsp Format: 123-456-7899</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="destination_image" type="url" title="URL Format: https://example.image.com" class="validate" value="{{this.image}}">
+                <label for="destination_image" data-error="Please submit a url for image Format: https://example.image.com" data-success="Valid">Image &nbsp URL Format: https://example.image.com/image_name.jpg</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="destination_website" type="url" title="URL Format: https://example.website.com" class="validate" value="{{this.website}}">
+                <label for="destination_website" data-error="Please submit a url for website Format: https://example.website.com" data-success="Valid">Website &nbsp URL Format: https://example.website.com</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea id="destination_description" title="Description of destination being Requested" class="materialize-textarea">{{this.description}}</textarea>
+                <label for="destination_description">Destination Description</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m6" required value={{this.category}}>
+                  <select multiple>
+                    <option value="" disabled selected>Choose all that apply</option>
+                    {{#if this.family_friendly}}
+                      <option value="1" selected>Family Friendly</option>
+                    {{/if}} 
+                    {{#unless this.family_friendly}}
+                      <option value="1">Family Friendly</option>
+                    {{/unless}}
+
+                    {{#if this.outdoor}}
+                      <option value="2" selected>Outdoor</option>
+                    {{/if}} 
+                    {{#unless this.outdoor}}
+                      <option value="2">Outdoor</option>
+                    {{/unless}}
+
+                    {{#if this.theme_park}}
+                      <option value="3" selected>Theme Park</option>
+                    {{/if}} 
+                    {{#unless this.theme_park}}
+                      <option value="3">Theme Park</option>
+                    {{/unless}} 
+
+                    {{#if this.museum}}
+                      <option value="4" selected>Museum</option>
+                    {{/if}}
+                    {{#unless this.museum}}
+                      <option value="4">Museum</option>
+                    {{/unless}}
+
+                    {{#if this.beach}}
+                      <option value="5" selected>Beach</option>
+                    {{/if}}
+                    {{#unless this.beach}}
+                      <option value="5">Beach</option>
+                    {{/unless}}
+
+                    {{#if this.entertainment}}
+                      <option value="6" selected>Entertainment</option>
+                    {{/if}}
+                    {{#unless this.entertainment}}
+                      <option value="6">Entertainment</option>
+                    {{/unless}}
+
+
+                    {{#if this.restaurant}}
+                      <option value="7" selected>Restaurant</option>
+                    {{/if}}
+                    {{#unless this.restaurant}}
+                      <option value="7">Restaurant</option>
+                    {{/unless}}
+                  </select>
+                <label>Destination Categories (Required)</label>
+            </div>
+        </div>        
+    </form>
+    <button class="btn waves-effect waves-light right" id="submit" type="submit" name="submit">Submit
+        <i class="material-icons right">send</i>
+    </button>
+</div>

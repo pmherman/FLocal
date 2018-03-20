@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <title>FLocal</title>
+
+	</head>
+	<body>
+        <nav id="navWrapper">
+            <div  class="nav-wrapper container">
+                <a href="/" class="hide-on-med-and-down brand-logo">
+                   <img id="logo" src="/assets/img/logo.png" alt="FLocal Logo">
+                </a>   
+                <ul class="right">               
+                    <li>    
+                        <div class="center row">
+                            <div class="col s12 " >
+                                <div class="row" id="topbarsearch">
+                                    <div class="input-field col s12">
+                                        <i class="white-text material-icons prefix">search</i>
+                                        <select>
+                                            <option value="">Filter By Category</option>
+                                            <option value="1">Family Friendly</option>
+                                            <option value="2">Outdoor</option>
+                                            <option value="3">Theme Park</option>
+                                            <option value="4">Museum</option>
+                                            <option value="5">Beach</option>
+                                            <option value="6">Entertainment</option>
+                                            <option value="7">Restaurant</option>
+                                            <option value="8">Shopping</option>
+                                        </select>                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <a href="/requestnewspot" class="white-text">Suggest New Spot</a>
+                    </li>
+                    {{#if user}}                   
+                    <li>
+                        <a href="/auth/logout" class="white-text">Logout</a>
+                    </li>
+                    {{else}}
+                    <li>
+                        <a href="/auth/login" class="white-text">Login</a>
+                    </li>
+                    {{/if}}
+                    {{!-- <li>
+                        <a href="/adminPage" class="white-text">Admin Page</a>
+                    </li> --}}
+                    <li>
+                        <a href="/" class="white-text"><i class="material-icons">home</i></a>
+                    </li>
+                    <li>
+                        <a href="/profile" class="white-text"><i class="material-icons">account_box</i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>    
+
+        <main class="container">
+            <div class="center-align col m12 s6">
+                <img id="largeLogo" src="/assets/img/logo.png" alt="FLocal Logo">
+            </div>
+            {{{body}}}
+        </main>
+
+        <footer class="page-footer">
+          <div id="footer" class="footer-copyright">
+            <div class="container">
+                © 2018 Powered by <i class="fa fa-coffee" aria-hidden="true"></i> and <i class="fa fa-heart" aria-hidden="true"></i>
+                <a class="white-text right" href="https://github.com/cjrabe17/project2" target="_blank"> &nbsp Github Repo </a>
+                <a class="white-text right" href="https://github.com/pmherman" target="_blank">&nbsp Paul Herman &nbsp| </a>
+                <a class="white-text right" href="https://github.com/cjrabe17" target="_blank">&nbsp Cassie Rabe &nbsp| </a>
+                <a class="white-text right" href="https://github.com/aidanclemente" target="_blank">&nbsp Aidan Clemente &nbsp| </a>
+            </div>
+          </div>
+        </footer>
+        <!--Import jQuery before materialize.js-->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	</body>
+</html>
+<script src="/javascript/app.js"></script>

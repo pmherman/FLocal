@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#approveForm, #editForm, #discardForm {
+  padding: 2px;
+}
+
+button {
+  width: 100%;
+  padding: 0px;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.card .card-content {
+  padding: 5px;
+}
+
+.card .sticky-action .col .s12 .m6 {
+  height: 300px;
+}
+
+.card .card-image img {
+  height: 200px;
+}
+
+.container {
+  width: 100vw;
+}
+
+#navWrapper, #footer {
+  background-color: #e57d11;
+}
+
+a:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+#logo {
+  font-size: 35px;
+  margin: 0px;
+}
+
+.page-footer {
+  padding-top: 0px;
+}
+
+.page-footer .footer-copyright {
+  background-color: #ee6e73;
+}
+
+#logo {
+  height: 60px;
+}
+
+#largeLogo {
+  height: 13em;
+  margin: 1em;
+}
