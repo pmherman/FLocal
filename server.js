@@ -19,7 +19,7 @@ var passport = require("passport");
 
 var app = express();
 
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8000;
 
 // Method override for RESTFul form submissions
 app.use(methodOverride("_method"));
