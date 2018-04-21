@@ -4,9 +4,6 @@
 
 FLocal gives Snowbirds the opportunity to get the local Florida experience. Locals suggest hidden gems throughout Florida for administrators to approve.
 
-### Deployed at: 
-[https://salty-waters-36162.herokuapp.com/](https://salty-waters-36162.herokuapp.com/)
-
 ## Built With
 
 * [Node.js](https://nodejs.org/en/) - The web framework used
@@ -31,3 +28,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Special thanks to the UCF Coding Bootcamp for teaching us how to use all these things.
 
+### Deployed at: [https://salty-waters-36162.herokuapp.com/](https://salty-waters-36162.herokuapp.com/)
