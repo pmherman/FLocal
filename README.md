@@ -4,7 +4,8 @@
 
 FLocal gives Snowbirds the opportunity to get the local Florida experience. Locals suggest hidden gems throughout Florida for administrators to approve.
 
-Deploayed at: [https://salty-waters-36162.herokuapp.com/](https://salty-waters-36162.herokuapp.com/)
+### Deployed at: 
+[https://salty-waters-36162.herokuapp.com/](https://salty-waters-36162.herokuapp.com/)
 
 ## Built With
 
@@ -30,6 +31,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Special thanks to the UCF Coding Bootcamp for teaching us how to use all these things.
 
-### Deployed At:
-
-https://stormy-shelf-12794.herokuapp.com/
